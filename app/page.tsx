@@ -17,7 +17,7 @@ export default function Page() {
       <Header />
 
       <section className="mt-6">
-        <SectionTitle title="Active Bus Map" />
+        <SectionTitle title="Select Bus Route" />
         <RouteSelector
           selectedRouteNumber={selectedRoute}
           onSelect={setSelectedRoute}
@@ -26,7 +26,7 @@ export default function Page() {
       </section>
 
       <section className="mt-10">
-        <SectionTitle title="Bus Schedule" />
+        <SectionTitle title="Schedule" />
         <RouteSelector
           selectedRouteNumber={selectedRoute}
           onSelect={setSelectedRoute}
