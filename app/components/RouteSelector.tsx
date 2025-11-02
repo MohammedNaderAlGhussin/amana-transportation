@@ -17,12 +17,12 @@ export default function RouteSelector({
   }));
 
   return (
-    <div className="flex overflow-x-auto gap-2 px-4 py-3 bg-white">
+    <div className="flex flex-wrap md:flex-nowrap md:overflow-x-auto gap-2 px-4 py-3 bg-white ">
       {routes.map((r) => (
         <button
           key={r.raw}
           onClick={() => onSelect(r.raw)}
-          className={`px-4 py-2 rounded-md font-medium min-w-[80px] ${
+          className={`px-4 py-2 rounded-md font-medium  min-w-[60px] md:min-w-[80px] ${
             selectedRouteNumber === r.raw
               ? "bg-green-600 text-white"
               : "bg-gray-200 hover:bg-gray-300"
