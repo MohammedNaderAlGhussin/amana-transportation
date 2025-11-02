@@ -44,8 +44,8 @@ export default function ScheduleTable({
               key={stop.id ?? `${stop.latitude}-${stop.longitude}`}
               className={`border-t ${
                 stop.is_next_stop
-                  ? "bg-orange-200 font-semibold"
-                  : "hover:bg-gray-50"
+                  ? "bg-primary-bg font-semibold"
+                  : "hover:bg-gray-100 hover:cursor-pointer"
               }`}
             >
               <td className="py-2 px-4 whitespace-nowrap">{stop.name}</td>
