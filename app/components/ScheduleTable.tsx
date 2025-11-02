@@ -30,12 +30,12 @@ export default function ScheduleTable({
   }
 
   return (
-    <div className="overflow-x-auto bg-white shadow-sm rounded-md">
-      <table className="min-w-full text-left text-sm">
+    <div className="bg-white shadow-sm rounded-md p-2 overflow-x-auto">
+      <table className="min-w-[500px] w-full text-left text-sm">
         <thead className="bg-gray-200 text-gray-700">
           <tr>
-            <th className="py-2 px-4">Bus Stop</th>
-            <th className="py-2 px-4">Estimated Arrival</th>
+            <th className="py-2 px-4 whitespace-nowrap">Bus Stop</th>
+            <th className="py-2 px-4 whitespace-nowrap">Estimated Arrival</th>
           </tr>
         </thead>
         <tbody>
@@ -48,8 +48,10 @@ export default function ScheduleTable({
                   : "hover:bg-gray-50"
               }`}
             >
-              <td className="py-2 px-4">{stop.name}</td>
-              <td className="py-2 px-4">{stop.estimated_arrival ?? "N/A"}</td>
+              <td className="py-2 px-4 whitespace-nowrap">{stop.name}</td>
+              <td className="py-2 px-4 whitespace-nowrap">
+                {stop.estimated_arrival ?? "N/A"}
+              </td>
             </tr>
           ))}
         </tbody>
