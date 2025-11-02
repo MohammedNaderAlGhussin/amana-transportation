@@ -22,10 +22,10 @@ export default function RouteSelector({
         <button
           key={r.raw}
           onClick={() => onSelect(r.raw)}
-          className={`px-4 py-2 rounded-md font-medium  min-w-[60px] md:min-w-[80px] ${
+          className={`px-4 py-2 rounded-xl font-medium  min-w-[60px] md:min-w-[80px] ${
             selectedRouteNumber === r.raw
-              ? "bg-green-600 text-white"
-              : "bg-gray-200 hover:bg-gray-300"
+              ? "bg-primary-bg text-white"
+              : "bg-gray-200 hover:bg-gray-300 hover:cursor-pointer"
           } transition`}
         >
           {r.label}
